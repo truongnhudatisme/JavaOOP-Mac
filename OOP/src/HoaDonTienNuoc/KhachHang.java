@@ -21,7 +21,7 @@ public class KhachHang implements Comparable<KhachHang> {
             tongtien = Math.round(tongtien*103/100.0);
         }
         else{
-            tongtien = 50*100 + 100*150 + (cst - 150) * 200;
+            tongtien = 50*100 + 50*150 + (cst - 100) * 200;
             tongtien = Math.round(tongtien*105/100.0);
         }
     }

@@ -15,17 +15,15 @@ public class SinhVien implements Comparable<SinhVien> {
             return 1;
         else if(this.sobaidung == o.sobaidung){
             if(this.soluotsub < o.soluotsub)
-                return 1;
+                return -1;
             else if(this.soluotsub == o.soluotsub){
                 if(this.hoten.compareTo(o.hoten) < 0)
                     return -1;
-                else if(this.hoten.compareTo(o.hoten)==0)
-                    return 0;
                 else
                     return 1;
             }
             else
-                return -1;
+                return 1;
         }
         return -1;
     }
